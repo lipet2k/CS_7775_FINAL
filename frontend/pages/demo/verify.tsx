@@ -26,7 +26,7 @@ export default function Verify() {
         try {
             const res = await fetch('/api/verify');
             const data = await res.json();
-            toast.success(data);
+            toast.success(res.status.toString());
         } catch (error) {
             toast.error("Proof Error");
         }

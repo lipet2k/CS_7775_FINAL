@@ -105,18 +105,6 @@ export default function About() {
           <ul role="list" className="mt-8 max-w-xl space-y-4 text-gray-600">
             <li className="flex gap-x-3">
               <AcademicCapIcon className="mt-1 h-5 w-5 flex-none text-red-600" aria-hidden="true" />
-              <span>https://privacycanada.net/mathematics/prime-factorization/</span>
-            </li>
-            <li className="flex gap-x-3">
-              <AcademicCapIcon className="mt-1 h-5 w-5 flex-none text-red-600" aria-hidden="true" />
-              <span>https://www.britannica.com/story/prime-numbers</span>
-            </li>
-            <li className="flex gap-x-3">
-              <AcademicCapIcon className="mt-1 h-5 w-5 flex-none text-red-600" aria-hidden="true" />
-              <span>https://cp-algorithms.com/algebra/factorization.html</span>
-            </li>
-            <li className="flex gap-x-3">
-              <AcademicCapIcon className="mt-1 h-5 w-5 flex-none text-red-600" aria-hidden="true" />
               <span>https://www.wired.com/video/watch/5-levels-zero-knowledge-proof</span>
             </li>
           </ul>
