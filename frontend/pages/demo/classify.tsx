@@ -27,11 +27,9 @@ export default function Classify() {
         switch (e.target.name) {
             case "age":
                 setAge(e.target.value);
-                console.log(age);
                 break;
             case "income":
                 setIncome(e.target.value);
-                console.log(income)
                 break;
             case "credit_ex":
                 setCreditEx(e.target.value);
@@ -64,7 +62,6 @@ export default function Classify() {
             }
             const response = await fetch('/api/classify' + '?' + new URLSearchParams(params));
             const data = await response.json();
-
             toast.info(data.prediction, {
                 position: "top-right",
                 autoClose: 5000,
