@@ -62,6 +62,7 @@ export default function Classify() {
             }
             const response = await fetch('/api/classify' + '?' + new URLSearchParams(params));
             const data = await response.json();
+
             toast.info(data.prediction, {
                 position: "top-right",
                 autoClose: 5000,

@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic' // defaults to auto
 export async function GET(request: Request) {
     try {
         const args = request.url.split('?')[1];
@@ -7,6 +8,6 @@ export async function GET(request: Request) {
 
         return new Response(JSON.stringify(data), { status: 200 });
     } catch (err: any) {
-        return new Response(JSON.stringify({error: err}), { status: 200 });
+        return new Response(JSON.stringify({error: err}), { status: 500 });
     }
 }

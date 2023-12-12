@@ -10,6 +10,6 @@ export async function POST(request: Request) {
 
         return new Response(JSON.stringify(data), { status: 200 });
     } catch (err: any) {
-        return new Response(JSON.stringify({error: err}), { status: 200 });
+        return new Response(JSON.stringify({error: err}), { status: 500 });
     }
 }
